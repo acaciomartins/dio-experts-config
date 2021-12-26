@@ -1,9 +1,9 @@
 server:
   port: $PORT
 eureka:
-  instance: 
-    hostname: setuplink-sprint-boot-poc.herokuapp.com
-    port: 9000
+  instance:
+    hostname: ${DOMAIN_NAME}
+    nonSecurePort: 80
   client:
     registerWithEureka: true
     fetchRegistry: false
