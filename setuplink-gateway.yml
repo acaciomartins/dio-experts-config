@@ -7,7 +7,7 @@ eureka:
     hostname: setuplink-gateway.herokuapp.com
   client:
     registerWithEureka: true
-    fetchRegistry: false
+    fetchRegistry: true
     serviceUrl:
       defaultZone: ${EUREKA_URL:http://localhost:5000}/eureka/
     server:
