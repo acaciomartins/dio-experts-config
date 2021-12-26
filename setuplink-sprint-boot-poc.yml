@@ -1,5 +1,5 @@
 server:
-  port: $PORT
+  port: 443
 eureka:
   instance:
     hostname: setuplink-sprint-boot-poc.herokuapp.com
