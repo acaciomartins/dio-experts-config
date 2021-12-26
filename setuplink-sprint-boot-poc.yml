@@ -4,7 +4,7 @@ server:
 
 eureka:
   instance: 
-    hostname: https://setuplink-service-discovery.herokuapp.com
+    hostname: setuplink-service-discovery.herokuapp.com
     port: 9000
   client:
     registerWithEureka: true
