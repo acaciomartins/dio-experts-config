@@ -1,3 +1,7 @@
+
+server:
+  port: $PORT
+
 eureka:
   instance: 
     hostname: setuplink-gateway.herokuapp.com
@@ -6,7 +10,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+      defaultZone: ${EUREKA_URL:http://localhost:5000}/eureka/
     server:
       wait-time-in-ms-when-sync-empty: 3000 
 
