@@ -1,0 +1,25 @@
+eureka:
+  instance: 
+    hostname: setuplink-gateway.herokuapp.com
+    port: 9000
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${EUREKA_URL:http://localhost:5000}/eureka/
+    server:
+      wait-time-in-ms-when-sync-empty: 3000 
+
+spring:
+  cloud:
+    gateway:    
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: setuplink-sprint-boot-poc
+          uri: lb://SETUPLINK-SPRINT-BOOT-POC
+          predicates:
+            - Path=/poc/cep/**
+            
