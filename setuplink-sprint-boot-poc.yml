@@ -4,7 +4,7 @@ server:
 
 eureka:
   instance: 
-    hostname: localhost
+    hostname: https://setuplink-service-discovery.herokuapp.com
     port: 9000
   client:
     registerWithEureka: true
