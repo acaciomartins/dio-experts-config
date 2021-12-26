@@ -3,7 +3,7 @@ server:
 eureka:
   instance:
     hostname: localhost
-    nonSecurePort: 80
+    nonSecurePort: $PORT
   client:
     registerWithEureka: true
     fetchRegistry: false
