@@ -1,6 +1,6 @@
 server:
-  port: $PORT
-
+  port:
+    $PORT
 eureka:
   instance: 
     hostname: setuplink-sprint-boot-poc.herokuapp.com
