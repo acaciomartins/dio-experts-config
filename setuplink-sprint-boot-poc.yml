@@ -2,8 +2,7 @@ server:
   port: $PORT
 eureka:
   instance:
-    hostname: ${DOMAIN_NAME}
-    nonSecurePort: $PORT
+    hostname: setuplink-sprint-boot-poc.herokuapp.com
   client:
     registerWithEureka: true
     fetchRegistry: false
